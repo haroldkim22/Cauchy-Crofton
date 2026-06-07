@@ -1,4 +1,3 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 from shapely.geometry import LineString, box
@@ -9,11 +8,10 @@ import time
 # ==========================================
 
 def x_func(t):
-    return 10*(t-np.sin(t))
-    # return 10*np.cos(t)
+    return 8 * np.cos(t) - np.cos(8*t)
 def y_func(t):
-    return 10*(1-np.cos(t))
-    # return 10*np.sin(t)
+    return 8 * np.sin(t) - np.sin(8*t)
+
 t_vals = np.linspace(0, 2 * np.pi, 10000)
 
 points = [(x_func(t), y_func(t)) for t in t_vals]
@@ -156,9 +154,9 @@ def visualize_sample(ax, k, d_theta_val, sample_idx):
 # ==========================================
 # [사용자 설정 파트] Sweep 범위 및 해상도 조절
 # --------------------------------------------------
-K_START = 0.02          # k 시작값 (예: 0.02 -> 2%)
-K_END   = 0.15          # k 끝값   (예: 0.15 -> 15%)
-K_STEPS = 10            # k 분할 단계 수 (해상도)
+K_START = 0.02    
+K_END   = 0.50     
+K_STEPS = 30
 
 k_vals = np.linspace(K_START, K_END, K_STEPS)
 
