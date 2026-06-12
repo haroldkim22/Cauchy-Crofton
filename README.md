@@ -50,6 +50,15 @@ def y_func(t):
     return 10 * (1 - np.cos(t))
 ```
 
+2. 변수 sweep 범위 설정:
+
+```python
+K_START = 0.02    
+K_END   = 0.50     
+K_STEPS = 30
+```
+
+
 2. 스크립트 실행:
 ```bash
 python CC_ver1.py        # 기본 구현
