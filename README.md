@@ -17,9 +17,9 @@
 
 **차이점:**
 - `CC_ver1.py`: AI가 제시한 초기 버전
-- `CC_ver2.py`: 바운딩 박스 최적화 추가
+- `CC_ver2.py`: 최종 버전 --> **그냥 이거 쓰세요**
 
-### 2️⃣ **오차 분석** (CC_sweep_ver1.py, CC_sweep_visualize.py, CC_sweep_only.py)
+### 2️⃣ **오차 분석** (CC_sweep_ver1.py, CC_sweep_only.py, CC_sweep_visualize.py)
 
 격자 간격과 각도 간격을 변화시키면서 추정 오차율을 분석하고 시각화합니다.
 
@@ -27,6 +27,11 @@
 - 여러 매개변수 조합에 대한 오차율 계산
 - 상대적 격자 간격(`k`)과 각도 간격(`d_theta`)의 영향 분석
 - 오차 그래프 시각화
+
+**차이점:**
+- `CC_sweep_ver1.py`: AI가 제시한 초기 버전
+- `CC_sweep_only.py`: 변수별로 sweep 후 오차율 분포만 도출함
+- `CC_sweep_visualize.py`: 변수별로 sweep 후 오차율 분포 및 몇몇 샘플들을 시각화함 --> **그냥 이거 쓰세요**
 
 ## 필요 라이브러리
 
