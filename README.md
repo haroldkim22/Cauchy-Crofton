@@ -51,11 +51,16 @@ def y_func(t):
 ```
 
 2. 변수 sweep 범위 설정:
-
+각도 간격은 사용 가능한 값이 제한되어 있기에 굳이 변경하지 마세요
 ```python
 K_START = 0.02    
 K_END   = 0.50     
 K_STEPS = 30
+
+d_theta_vals = np.array([
+    np.pi/12, np.pi/10, np.pi/8, np.pi/7, np.pi/6,
+    np.pi/5, np.pi/4, np.pi/3, np.pi/2
+])
 ```
 
 
