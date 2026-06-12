@@ -51,6 +51,7 @@ def y_func(t):
 ```
 
 2. 변수 sweep 범위 설정:
+   
 각도 간격은 사용 가능한 값이 제한되어 있기에 굳이 변경하지 마세요
 ```python
 K_START = 0.02    
@@ -64,7 +65,7 @@ d_theta_vals = np.array([
 ```
 
 
-2. 스크립트 실행:
+3. 스크립트 실행:
 ```bash
 python CC_ver1.py        # 기본 구현
 python CC_sweep_ver1.py  # 오차 분석
